@@ -64,7 +64,8 @@ def init_agent():
     openai_tools = convert_to_openai_tools(langchain_tools)
 
     hf_client = InferenceClient(
-        api_key=os.getenv("HUGGINGFACEHUB_API_TOKEN")
+        #api_key=os.getenv("HUGGINGFACEHUB_API_TOKEN")
+        api_key = st.secrets.get("HUGGINGFACEHUB_API_TOKEN", os.getenv("HUGGINGFACEHUB_API_TOKEN"))
     )
 
     return hf_client, named_tools, openai_tools
