@@ -152,4 +152,4 @@ if prompt := st.chat_input("Ask Anything.......Your AI Agent for Math, Web and E
     )
 
 
-st.subheader("An Essmorath Innovation --- Virendra S")
+st.markdown("An Essmorath Innovation --- Virendra S")
