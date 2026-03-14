@@ -115,9 +115,9 @@ async def run_agent(messages):
 
 
 # Streamlit UI
-st.set_page_config(page_title="MCP AI Chatbot", page_icon="🤖")
+st.set_page_config(page_title="Multi Agentic System", page_icon="🤖")
 
-st.title("🤖 MCP AI Chatbot")
+st.title("🤖 OmniAgent AI")
 
 # Chat history
 if "messages" not in st.session_state:
@@ -131,7 +131,7 @@ for msg in st.session_state.messages:
 
 
 # User input
-if prompt := st.chat_input("Ask anything..."):
+if prompt := st.chat_input("Ask Anything.......Your AI Agent for Math, Web and Everyday Tasks"):
 
     st.session_state.messages.append({"role": "user", "content": prompt})
 
@@ -149,3 +149,6 @@ if prompt := st.chat_input("Ask anything..."):
     st.session_state.messages.append(
         {"role": "assistant", "content": response}
     )
+
+
+st.subheader("An Essmorath Innovation --- Virendra S")
