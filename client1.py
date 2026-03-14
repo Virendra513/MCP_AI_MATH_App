@@ -116,9 +116,9 @@ async def run_agent(messages):
 
 
 # Streamlit UI
-st.set_page_config(page_title="Multi Agentic System", page_icon="🤖")
+st.set_page_config(page_title="Essmorath-Agent", page_icon="🤖")
 
-st.title("🤖 OmniAgent AI")
+st.title("🤖 Essmorath-Agent (MCP Powered Intelligence)")
 
 # Chat history
 if "messages" not in st.session_state:
