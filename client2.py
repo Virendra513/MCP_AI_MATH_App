@@ -70,7 +70,9 @@ async def main():
         model="openai/gpt-oss-120b:novita",
         messages=messages,
         tools=tools,
-        tool_choice="auto"
+        tool_choice="auto",
+        max_tokens=150,
+        temperature=0.7
     )
 
     message = response.choices[0].message
@@ -101,7 +103,9 @@ async def main():
 
     final = hf_client.chat.completions.create(
         model="openai/gpt-oss-120b:novita",
-        messages=messages
+        messages=messages,
+        max_tokens=150,
+        temperature=0.7
     )
     
 
