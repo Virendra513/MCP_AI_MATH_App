@@ -9,6 +9,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 load_dotenv()
 
 # MCP Servers
+'''
 SERVERS = {
     "Math Server": {
         "transport": "streamable_http",
@@ -19,6 +20,18 @@ SERVERS = {
         "url": "https://remote.mcpservers.org/fetch/mcp"
     }
 }
+'''
+SERVERS = {
+    "Math Server": {
+        "transport": "streamable_http",
+        "url": "https://mcp.deepwiki.com/mcp"
+    },
+    "Fetch Server": {
+        "transport": "streamable_http",
+        "url": "https://allemannsdata.com/weather/mcp"
+    }
+}
+
 
 # Convert LangChain tools → OpenAI format
 def convert_to_openai_tools(langchain_tools):
