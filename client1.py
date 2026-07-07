@@ -9,18 +9,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 load_dotenv()
 
 # MCP Servers
-'''
-SERVERS = {
-    "Math Server": {
-        "transport": "streamable_http",
-        "url": "https://math-mcp.fastmcp.app/mcp"
-    },
-    "Fetch Server": {
-        "transport": "streamable_http",
-        "url": "https://remote.mcpservers.org/fetch/mcp"
-    }
-}
-'''
+
 SERVERS = {
     "Math Server": {
         "transport": "streamable_http",
